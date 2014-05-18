@@ -194,6 +194,11 @@ Left         | Center        | Right
 
 ***
 
+- [ ] task 1
+- [ ] task 2
+
+***
+
 ###### Code and Syntax Highlight
 
 {% highlight bash linenos %}

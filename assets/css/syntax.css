@@ -12,11 +12,12 @@
 
 }
 
-.highlight:hover {
-  margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
-  width: 60em;
+@media (min-width: 1280px) {
+  .highlight:hover {
+    margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
+    width: 60em;
+  }
 }
-
 .highlight pre {
   margin: 0;
   padding: 10px 15px;
@@ -121,9 +122,11 @@
 
 /********************************************************************/
 /* Zen Mode */
-.highlight.zen-mode {
-  margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
-  width: 60em;
+@media (min-width: 1280px) {
+  .highlight.zen-mode {
+    margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
+    width: 60em;
+  }
 }
 
 * {
