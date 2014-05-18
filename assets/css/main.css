@@ -1,165 +1,335 @@
 /*****************************************************************************/
-/*
 /* Common
-/*
 /*****************************************************************************/
 
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-html, body { height: 100%; }
+::selection, -moz-selection {
+  /*background-color: rgba(255,0,128,1);*/
+  background-color: rgba(255,255,0,1);
+  /*color: white;*/
+  color: black;
+}
 
 body {
-  background-color: #F6F6EE;
-  font: 16px Helvetica, Arial, sans-serif;
-  /*font-size: small;*/
-  color: #333;
-  text-align: center;
+    font: 18px/1.618em 'Belgrano', serif;
+    color: #333;
+    background-color: #f6f6ee;
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-family: 'IM Fell DW Pica', times, serif;
+  line-height: 1.1618em;
+}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1 {
+    font-size: 3em;
+    margin: calc(1em/6*1) 0;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+h2 {
+    font-size: 2.5em;
+    margin: calc(1em/6*2) 0;
+}
+
+h3 {
+    font-size: 2em;
+    margin: calc(1em/6*3) 0;
+}
+
+h4 {
+    font-size: 1.75em;
+    margin: calc(1em/6*4) 0;
+}
+
+h5 {
+    font-size: 1.50em;
+    margin: calc(1em/6*5) 0;
+}
+
+h6 {
+    font-size: 1.25em;
+    margin: calc(1em/6*6) 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+a {
+    font-family: 'Ubuntu Mono', monospace;
+    color: #00a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #a0a;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
 
 /*****************************************************************************/
-/*
 /* Home
-/*
 /*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+.posts
+{
+    margin: 2em 0;
 }
 
-.posts li {
-  line-height: 1.75em;
+.posts li
+{
+    list-style-type: none;
+    line-height: 1.75em;
 }
 
-.posts span, .meta {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+.posts span, .meta
+{
+    color: #aaa;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .8em;
 }
 
 /*****************************************************************************/
-/*
 /* Site
-/*
 /*****************************************************************************/
 
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+.site
+{
+    width: 42em;
+    margin: 2em auto 2em;
 }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
+.header {
+  border-bottom: 4px solid #eee;
 }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
+.header a
+{
+    font-weight: bold;
+
+    text-decoration: none;
 }
 
-.title a {
-  color: #a00;
+.title
+{
+    display: inline-block;
+
+    margin-bottom: 2em;
 }
 
-.title a:hover {
-  color: #000;
+.title a
+{
+    color: #a00;
 }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+.title a:hover
+{
+    color: #000;
 }
 
-.header a.extra:hover {
-  color: #000;
+.header a.extra
+{
+    margin-left: 1em;
+
+    color: #aaa;
 }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+.header a.extra:hover
+{
+    color: #000;
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+.footer
+{
+    font-size: .8em;
+
+    overflow: hidden;
+
+    margin-top: 2em;
+
+    color: #666;
+    border-top: 4px solid #eee;
 }
 
-.footer .contact a {
-  color: #8085C1;
+.footer .contact
+{
+    float: left;
+
+    margin-right: 3em;
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
+.footer .contact a
+{
+    color: #8085c1;
 }
 
 /*****************************************************************************/
-/*
 /* Posts
-/*
 /*****************************************************************************/
+.post {
+  border-top: 4px solid #eee;
+}
 
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.post .rtl {
+  direction: rtl;
 }
 
 .post ul, .post ol {
   margin-left: 1.35em;
 }
 
+/* inline code */
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+  background-color: #555;
+  border-radius: 3px;
+  padding: 4px 8px;
+  color: #FFE14A;
 }
 
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
-
-.post img {
+.post img
+{
   display: block;
-  margin: 0 auto;
-  width: auto;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+
+blockquote
+{
+    margin: 0;
+    padding: 0 0 0 1em;
+    color: #666;
+    border-left: .4em solid #e1e1e1;
+}
+
+blockquote cite {
+  display: block;
+  font-size: .8em;
+  color: #999;
+}
+
+blockquote cite::before {
+  content: '\2014 \00A0';
+}
+
+kbd {
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0.1em 0.4em;
+
+  color: #333;
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 1.2em;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 0px rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border: 3px solid #ddd;
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+table > tbody > tr:first-child > td {
+  border-top: 0;
+}
+
+table > thead:first-child > tr:first-child > th:first-child,
+table > tbody > tr > td:first-child {
+  border-left: 0;
+}
+
+table > thead:first-child > tr:first-child > th:last-child,
+table > tbody > tr > td:last-child {
+  border-right: 0;
+}
+
+
+/*****************************************************************************/
+/* Fluid box
+/*****************************************************************************/
+.fluidbox {
+  outline: none;
+}
+
+.fluidbox-overlay {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: .25s ease-in-out;
+}
+
+.fluidbox-wrap {
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  transition: .25s ease-in-out;
+}
+
+.fluidbox-ghost {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  transition: .25s ease-in-out;
 }
