@@ -134,7 +134,7 @@
 }
 
 .zen-mode-distraction {
-  opacity: 0 !important;
+  opacity: .05 !important;
   transition: opacity .25s ease;
 }
 
