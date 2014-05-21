@@ -1,8 +1,0 @@
----
-layout: post
-title: Real title
-date: 2014-05-16
-categories: [web , tech]
-tags: [web, tech]
----
-

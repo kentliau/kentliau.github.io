@@ -9,15 +9,8 @@
   width: 100%; /* need to have some value for to tween */
   margin-left: 0;
   transition: all .25s ease-in-out;
-
 }
 
-@media (min-width: 1280px) {
-  .highlight:hover {
-    margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
-    width: 60em;
-  }
-}
 .highlight pre {
   margin: 0;
   padding: 10px 15px;
@@ -121,10 +114,10 @@
 }
 
 /********************************************************************/
-/* Zen Mode */
+/* expand Mode */
 @media (min-width: 1280px) {
-  .highlight.zen-mode {
-    margin-left: calc(-18em/2); /* parent.width=42em - this.width=60em / 2 */
+  .highlight.expand-mode {
+    margin-left: calc(-22em/2); /* parent.width=38em - this.width=60em / 2 */
     width: 60em;
   }
 }
@@ -133,9 +126,9 @@
   transition: opacity .25s ease;
 }
 
-.zen-mode-distraction {
+.expand-mode-distraction {
   opacity: .05 !important;
-  transition: opacity .25s ease;
+  transition: all .25s ease;
 }
 
 /********************************************************************/

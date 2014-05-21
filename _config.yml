@@ -1,16 +1,28 @@
 name: Writing
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: ["no_intra_emphasis",
+               "fenced_code_blocks",
+               "autolink",
+               "tables",
+               "with_toc_data"]
 pygments: true
 
 # Permalinks
 permalink: /:categories/:title/
 
-exclude: [
-          README.md
-         ]
+# Server
+source:           src
+destination:      _site
+host:             0.0.0.0
+url:              localhost
+port:             9001
+baseurl:          /
+encoding:         UTF-8
 
-include: [
-          .htaccess
-         ]
+#paginate: 1
+#paginate_path: "blog/page:num"
+
+exclude: ["README.md"]
+
+include: [".htaccess"]
