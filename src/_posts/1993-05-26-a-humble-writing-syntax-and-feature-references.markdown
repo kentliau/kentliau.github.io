@@ -272,7 +272,7 @@ class Router extends RouterAbstract
 }
 {% endhighlight %}
 
-{% highlight objective-c linenos %}
+{% highlight objectivec linenos %}
 @interface SKTText : SKTGraphic<NSTextStorageDelegate> {
     @private
     NSTextStorage *_contents;
