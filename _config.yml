@@ -13,7 +13,7 @@ permalink: /:categories/:title/
 
 # Server
 source:           src
-destination:      _site
+destination:      _gh_pages
 host:             0.0.0.0
 url:              localhost
 port:             9001
