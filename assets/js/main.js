@@ -1,7 +1,7 @@
 var options = {
-  highlightToolbar: false,
-  inlineCodeAutoSelect: false,
-  fluidbox: true
+  highlightToolbar: !0,
+  inlineCodeAutoSelect: !0,
+  fluidbox: !0
 };
 
 (function() {
