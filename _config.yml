@@ -13,12 +13,12 @@ permalink: /:categories/:title/
 
 # Server
 source:           src
-destination:      _gh_pages
-host:             0.0.0.0
-url:              localhost
-port:             9001
-baseurl:          /
-encoding:         UTF-8
+#destination:      _gh_pages
+#host:             0.0.0.0
+#url:              localhost
+#port:             9001
+#baseurl:          /
+#encoding:         UTF-8
 
 #paginate: 1
 #paginate_path: "blog/page:num"
