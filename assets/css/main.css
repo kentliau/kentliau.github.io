@@ -4,17 +4,28 @@
 
 /* Global Reset */
 
-html, body s{
+html, body {
     margin: 0;
     padding: 0;
 }
 
-::selection, -moz-selection {
+
+/* Special case, require to be written separately for this pseudo element */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::selection */
+::-moz-selection {
   /*background-color: rgba(255,0,128,1);*/
   background-color: rgba(255,255,0,1);
   /*color: white;*/
   color: black;
 }
+
+::selection {
+  /*background-color: rgba(255,0,128,1);*/
+  background-color: rgba(255,255,0,1);
+  /*color: white;*/
+  color: black;
+}
+
 
 body {
     font: 18px/1.618em 'Belgrano', serif;
@@ -409,10 +420,10 @@ table > tbody > tr > td:last-child {
   position: absolute;
   transition: all .25s ease-in-out;
 }
-.fluidbox-closed .fluidbox-ghost {
-  -webkit-transition-property: opacity, -webkit-transform;
-  -moz-transition-property: opacity, -moz-transform;
-  -o-transition-propert: opacity, -o-transform;
-  transition-property: opacity, transform;
-  transition-delay: .25s, 0s;
-}
+  .fluidbox-closed .fluidbox-ghost {
+    -webkit-transition-property: top, left, opacity, -webkit-transform;
+    -moz-transition-property: top, left, opacity, -moz-transform;
+    -o-transition-propert: top, left, opacity, -o-transform;
+    transition-property: top, left, opacity, transform;
+    transition-delay: 0, 0, .25s, 0;
+  }
