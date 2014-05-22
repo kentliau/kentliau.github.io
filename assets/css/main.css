@@ -106,19 +106,33 @@ img
 {
   display: block;
   max-width: 100%;
+  width: auto;
   height: auto;
   margin: 0 auto;
+  background-color: rgba(205, 202, 162, 0.16);
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  border: .7em solid transparent;
+
+  /*outline: 20px solid rgba(205, 202, 162, 0.16);*/
 }
 
-/*img[src$=".gif"] {
+/*
+img[src$=".gif"] {
   min-width: 100%;
 }
 */
 
 cite {
+  background-color: rgba(205, 202, 162, 0.16);
   display: block;
-  font-size: .70em;
+  font-size: .8em;
   color: #999;
+  border: 1em solid transparent;
+  border-top:0;
+  /*outline: 20px solid rgba(205, 202, 162, 0.16);*/
 }
 
 cite::before {
@@ -281,7 +295,8 @@ blockquote
     margin: 0;
     padding: 0 0 0 1em;
     color: #666;
-    border-left: .4em solid #e1e1e1;
+    border-left: .4em solid rgba(205, 202, 162, .5);
+    background: rgba(205, 202, 162, 0.16);
 }
 
 
@@ -289,6 +304,7 @@ blockquote cite {
   display: block;
   font-size: .8em;
   color: #999;
+  background: none;
 }
 
 blockquote cite::before {
@@ -368,7 +384,6 @@ table > tbody > tr > td:last-child {
 .fluidbox {
   outline: none;
 }
-
 .fluidbox-overlay {
   cursor: pointer;
   cursor: -webkit-zoom-out;
@@ -379,20 +394,25 @@ table > tbody > tr > td:last-child {
   left: 0;
   bottom: 0;
   right: 0;
-  transition: .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
-
 .fluidbox-wrap {
   background-position: center center;
   background-size: cover;
   margin: 0 auto;
   position: relative;
-  transition: .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
-
 .fluidbox-ghost {
   background-size: cover;
   background-position: center center;
   position: absolute;
-  transition: .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+.fluidbox-closed .fluidbox-ghost {
+  -webkit-transition-property: opacity, -webkit-transform;
+  -moz-transition-property: opacity, -moz-transform;
+  -o-transition-propert: opacity, -o-transform;
+  transition-property: opacity, transform;
+  transition-delay: .25s, 0s;
 }

@@ -87,6 +87,7 @@ Here are just some of the fantastic reviews that we are very humbled to say our 
 ### Image
 
 [![UNIX Plate](/assets/img/last_day_on_mars_small.jpg)](/assets/img/last_day_on_mars_large.jpg)
+<cite>Last Day on Mars</cite>
 
 
 ### Inline code and Keyboard Keys
