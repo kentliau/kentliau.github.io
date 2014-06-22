@@ -1,14 +1,12 @@
 /*****************************************************************************/
 /* Common
 /*****************************************************************************/
-
-/* Global Reset */
-
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
-
 
 /* Special case, require to be written separately for this pseudo element */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/::selection */
@@ -16,27 +14,27 @@ html, body {
   /*background-color: rgba(255,0,128,1);*/
   background-color: rgba(255,255,0,1);
   /*color: white;*/
-  color: black;
+  color: #000;
 }
 
 ::selection {
   /*background-color: rgba(255,0,128,1);*/
   background-color: rgba(255,255,0,1);
   /*color: white;*/
-  color: black;
+  color: #000;
 }
 
-
 body {
-    font: 18px/1.618em 'Belgrano', serif;
-    color: #333;
-    background-color: #f6f6ee;
-    text-rendering: optimizeLegibility;
+  font: 18px/1.618em 'Belgrano', serif;
+  color: #333;
+  background-color: #f6f6ee;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IM Fell DW Pica', times, serif;
   line-height: 1.1618em;
+  color: #3f3f3f;
 }
 
 h1:first-child,
@@ -44,73 +42,71 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child,
-h6:first-child
-{
+h6:first-child {
   margin-top: .5em;
 }
 
 h1 {
-    font-size: 3em;
-    margin: 1em 0 calc(1em/6*1);
+  font-size: 3em;
+  margin: 1em 0 calc(1em/6*1);
 }
 
 h2 {
-    font-size: 2.5em;
-    margin: 1em 0 calc(1em/6*2);
+  font-size: 2.5em;
+  margin: 1em 0 calc(1em/6*2);
 }
 
 h3 {
-    font-size: 2em;
-    margin: 1em 0 calc(1em/6*3);
+  font-size: 2em;
+  margin: 1em 0 calc(1em/6*3);
 }
 
 h4 {
-    font-size: 1.75em;
-    margin: 1em 0 calc(1em/6*4);
+  font-size: 1.75em;
+  margin: 1em 0 calc(1em/6*4);
 }
 
 h5 {
-    font-size: 1.50em;
-    margin: 1em 0 calc(1em/6*5);
+  font-size: 1.50em;
+  margin: 1em 0 calc(1em/6*5);
 }
 
 h6 {
-    display: inline-block;
-    font-size: 1.25em;
-    margin: 1em 0 0.2em;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 1em 0 0.2em;
 }
 
 p {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 strong {
-  /*border-bottom: 1px dotted #333;*/
   text-decoration: underline;
 }
 
 ul, ol {
-    padding: 0;
+  padding: 0;
 }
 
 a {
-    font-family: 'Ubuntu Mono', monospace;
-    color: #00a;
-    text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #00a;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #000;
-    text-decoration: underline;
+  color: #000;
+  text-decoration: underline;
 }
 
 a:visited {
-    color: #a0a;
+  color: #a0a;
 }
 
 hr {
-    border: 0;
-    border-top: 1px solid #ccc;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 img
@@ -126,15 +122,11 @@ img
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
   border: .7em solid transparent;
-
-  /*outline: 20px solid rgba(205, 202, 162, 0.16);*/
 }
 
-/*
 img[src$=".gif"] {
   min-width: 100%;
 }
-*/
 
 cite {
   background-color: rgba(205, 202, 162, 0.16);
@@ -142,12 +134,15 @@ cite {
   font-size: .8em;
   color: #999;
   border: 1em solid transparent;
-  border-top:0;
-  /*outline: 20px solid rgba(205, 202, 162, 0.16);*/
+  border-top: 0;
 }
 
 cite::before {
   content: 'Source: ';
+}
+
+address {
+  font-style: normal;
 }
 
 /* inline code */
@@ -170,21 +165,89 @@ code {
   color: rgb(200,100,0);
 }
 
+/* use attributes dir=rtl */
+/*
+.rtl {
+  direction: rtl;
+}
+*/
 
 /*****************************************************************************/
-/* Home
+/* Site
 /*****************************************************************************/
-.posts
-{
-    margin: 2em 0;
-    font-family: 'IM Fell DW Pica', times, serif;
+main {
+  width: 100%;
+  height: 100%;
 }
 
-.posts li
-{
-    list-style-type: none;
-    line-height: 1.75em;
-    font-family: inherit;
+header {
+  font-family: "Ubuntu Mono", monospace;
+  padding: 10px 20px;
+  background-color: rgba(190, 103, 0, 1);
+  color: rgba(222, 220, 185, 1);
+}
+
+header a, header a:visited {
+  color: inherit;
+}
+
+article {
+  padding: 2em 0;
+}
+
+footer {
+  font-family: "Ubuntu Mono", monospace;
+  padding: 10px 20px;
+  background-color: rgba(190, 103, 0, 1);
+  color: rgba(222, 220, 185, 1);
+  overflow: hidden;
+}
+
+footer address {
+  color: inherit;
+  float: left;
+  margin-right: 3em;
+}
+
+footer a, footer a:visited {
+  color: inherit;
+}
+
+/*****************************************************************************/
+/* Grid
+/*****************************************************************************/
+.row {
+  width: 38em;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .row {
+    width: 25em;
+  }
+}
+
+@media (max-width: 479px) {
+  .row {
+    width: 16em;
+  }
+}
+
+/*****************************************************************************/
+/* Posts Listing
+/*****************************************************************************/
+.posts {
+  font-family: 'IM Fell DW Pica', times, serif;
+}
+
+.posts {
+  margin: 0;
+}
+
+.posts li {
+  list-style-type: none;
+  line-height: 1.75em;
+  font-family: inherit;
 }
 
 .posts li a {
@@ -192,122 +255,29 @@ code {
   font-family: inherit;
 }
 
-.posts span, .meta
-{
-    color: #aaa;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: .8em;
+.posts span, .meta {
+  color: #aaa;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: .8em;
 }
 
 /*****************************************************************************/
-/* Site
-/*****************************************************************************/
-.site
-{
-    width: 38em;
-    margin: 2em auto 2em;
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  .site {
-    width: 25em;
-  }
-}
-
-@media (max-width: 479px) {
-  .site {
-    width: 16em;
-  }
-}
-
-
-
-.header {
-  border-bottom: 4px solid #eee;
-}
-
-.header a
-{
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-.title
-{
-    display: inline-block;
-
-    margin-bottom: 2em;
-}
-
-.title a
-{
-    color: #a00;
-}
-
-.title a:hover
-{
-    color: #000;
-}
-
-.header a.extra
-{
-    margin-left: 1em;
-
-    color: #aaa;
-}
-
-.header a.extra:hover
-{
-    color: #000;
-}
-
-.footer
-{
-    font-size: .8em;
-
-    overflow: hidden;
-
-    margin-top: 2em;
-
-    color: #666;
-    border-top: 4px solid #eee;
-}
-
-.footer .contact
-{
-    float: left;
-
-    margin-right: 3em;
-}
-
-.footer .contact a
-{
-    color: #8085c1;
-}
-
-/*****************************************************************************/
-/* Posts
+/* Post
 /*****************************************************************************/
 .post {
   border-top: 4px solid #eee;
-}
-
-.post .rtl {
-  direction: rtl;
 }
 
 .post ul, .post ol {
   margin-left: 1.35em;
 }
 
-blockquote
-{
-    margin: 0;
-    padding: 0 0 0 1em;
-    color: #666;
-    border-left: .4em solid rgba(205, 202, 162, .5);
-    background: rgba(205, 202, 162, 0.16);
+blockquote {
+  margin: 0;
+  padding: .1em 0 .1em 1em;
+  color: #666;
+  border-left: .4em solid rgba(205, 202, 162, .5);
+  background: rgba(205, 202, 162, 0.16);
 }
 
 
@@ -316,6 +286,7 @@ blockquote cite {
   font-size: .8em;
   color: #999;
   background: none;
+  border: 0;
 }
 
 blockquote cite::before {
@@ -395,6 +366,7 @@ table > tbody > tr > td:last-child {
 .fluidbox {
   outline: none;
 }
+
 .fluidbox-overlay {
   cursor: pointer;
   cursor: -webkit-zoom-out;
@@ -407,6 +379,7 @@ table > tbody > tr > td:last-child {
   right: 0;
   transition: all .25s ease-in-out;
 }
+
 .fluidbox-wrap {
   background-position: center center;
   background-size: cover;
@@ -414,16 +387,18 @@ table > tbody > tr > td:last-child {
   position: relative;
   transition: all .25s ease-in-out;
 }
+
 .fluidbox-ghost {
   background-size: cover;
   background-position: center center;
   position: absolute;
   transition: all .25s ease-in-out;
 }
-  .fluidbox-closed .fluidbox-ghost {
-    -webkit-transition-property: top, left, opacity, -webkit-transform;
-    -moz-transition-property: top, left, opacity, -moz-transform;
-    -o-transition-propert: top, left, opacity, -o-transform;
-    transition-property: top, left, opacity, transform;
-    transition-delay: 0, 0, .25s, 0;
-  }
+
+.fluidbox-closed .fluidbox-ghost {
+  -webkit-transition-property: top, left, opacity, -webkit-transform;
+  -moz-transition-property: top, left, opacity, -moz-transform;
+  -o-transition-propert: top, left, opacity, -o-transform;
+  transition-property: top, left, opacity, transform;
+  transition-delay: 0, 0, .25s, 0;
+}

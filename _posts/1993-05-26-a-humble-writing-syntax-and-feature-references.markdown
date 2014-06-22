@@ -5,6 +5,18 @@ date: 1993-05-26 11:11:11
 category: code
 ---
 
+
+<svg width="100%" height="250" viewBox="0 0 3 2">
+  <rect width="1" height="2" x="0" fill="#008d46" />
+  <rect width="1" height="2" x="1" fill="#ffffff" />
+  <rect width="1" height="2" x="2" fill="#d2232c" />
+</svg>
+
+<ruby>
+  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+  字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
+
 # Humble I
 ## Humble II
 ### Humble III
@@ -50,13 +62,13 @@ Jest dostępnych wiele różnych wersji ale większość zmieniła się pod wpł
 
 ### Arabian
 
-<p class="rtl">
+<p dir="rtl">
 هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال.
 </p>
 
 ### Hebrew
 
-<p class="rtl">
+<p dir="rtl">
 בניגוד לטענה הרווחת,אינו סתם טקסט רנדומלי. יש לו שורשים וחלקים מתוך הספרות הלטינית הקלאסית מאז 45 לפני הספירה. מה שהופך אותו לעתיק מעל שנה. ריצ'רד מקלינטוק, פרופסור לטיני בקולג' של המפדן-סידני בורג'יניה, חיפש את אחת המילים המעורפלות ביותר בלטינית מתוך פסקאות שלודרך ציטוטים של המילה מתוך הספרות הקלאסית, הוא גילה מקור בלתי ניתן לערעור.מגיע מתוך.
 </p>
 
@@ -217,103 +229,15 @@ curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' 
 </html>
 {% endhighlight %}
 
-{% highlight javascript lineno %}
-(function(){
-  console.log();
-})();
-{% endhighlight %}
-
 {% highlight css linenos %}
 body {
   background: rgb(255,255,255);
 }
 {% endhighlight %}
 
-{% highlight php linenos %}
-<?php namespace Laravel;
-
-use RouterAbstract;
-
-class Router extends RouterAbstract
-             implements TemplateName {
-
-  use RounterTrait;
-
-  public method;
-
-  public function __construct($args)
-  {
-    parent::__construct($args);
-  }
-
-  /** HTTP GET method
-    *
-    * @param none
-    * @return mixed
-    */
-  public function get()
-  {
-    $this->method = 'GET';
-    $this->status = 200;
-    $this->message = 'success';
-    $this->header = [
-      'access_allow_method' => ['get', 'post']
-    ];
-    return $this->everything();
-  }
-}
-{% endhighlight %}
-
-{% highlight javascript linenos %}
-{
-  data: [
-    {
-      url: "http://placezombies.com/200x200"
-    },
-    {
-      url: "http://placezombies.com/400x400"
-    }
-  ],
-  metadata: {
-    status: 200,
-    message: "successful request"
-  }
-}
-{% endhighlight %}
-
-{% highlight objective-c linenos %}
-@interface SKTText : SKTGraphic<NSTextStorageDelegate> {
-    @private
-    NSTextStorage *_contents;
-    BOOL _contentsBeingChangedByScripting;
-    BOOL _boundsBeingChangedToMatchContents;
-}
-@end
-
-@implementation SKTText
-- (NSTextStorage *)contents {
-    // Never return nil.
-    if (!_contents) {
-      _contents = [[NSTextStorage alloc] init];
-      [_contents setDelegate:self];
-    }
-    return _contents;
-}
-
-+ (NSString *)presentablePropertyNameForKey:(NSString *)key {
-   static NSDictionary *presentablePropertyNamesByKey = nil;
-    if (!presentablePropertyNamesByKey) {
-      presentablePropertyNamesByKey
-        = [[NSMutableDictionary alloc]
-            initWithObjectsAndKeys:
-      NSLocalizedStringFromTable(
-        @"Text",
-        @"UndoStrings",
-        @"Action name part for SKTTextUndoContentsKey."
-        , SKTTextUndoContentsKey,
-      nil];
-    }
-    return presentablePropertyName;
-}
-@end
+{% highlight javascript %}
+// without line numbers
+(function(){
+  console.log();
+})();
 {% endhighlight %}

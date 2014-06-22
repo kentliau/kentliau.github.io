@@ -42,16 +42,16 @@
 }
 */
 
-/* By default line number should display */
+/* By default line number should not display */
 .lineno {
-  visibility: hidden;
-  display: none;
+  visibility: visible;
+  display: inherit;
 }
 
 /* When the input:checkbox is checked, lineno will display */
 .toggle-lineno:checked  ~ pre code .lineno {
-  visibility: visible;
-  display: inherit;
+  visibility: hidden;
+  display: none;
 }
 
 .toggle-lineno, .toggle-lineno:focus {
@@ -90,21 +90,21 @@
 
 /* uncheck, mouse out */
 .toggle-lineno::before {
-  content: 'Line Number is Off';
-  color: #c0392b;
-}
-/* uncheck, mouse in */
-.toggle-lineno:hover::before {
-  color: #e74c3c;
-}
-/* check, mouse out */
-.toggle-lineno:checked::after {
   content: 'Line Number is On';
   color: #27ae60;
 }
+/* uncheck, mouse in */
+.toggle-lineno:hover::before {
+  color: #2ecc71;
+}
+/* check, mouse out */
+.toggle-lineno:checked::after {
+  content: 'Line Number is Off';
+  color: #c0392b;
+}
 /* check, mouse in */
 .toggle-lineno:hover:checked::after {
-  color: #2ecc71;
+  color: #e74c3c;
 }
 
 /* check, and hide the "Off" text */

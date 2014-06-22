@@ -1,6 +1,6 @@
 var options = {
-  highlightToolbar: !0,
-  inlineCodeAutoSelect: !0,
+  highlightToolbar: !1,
+  inlineCodeAutoSelect: !1,
   fluidbox: !0
 };
 
@@ -63,7 +63,7 @@ if( options.highlightToolbar ) {
       type: 'checkbox',
       class: 'toggle-lineno',
       title: 'Press to toggle line numbers',
-      checked: true
+      checked: false
     }));
 
   // Adds select text feature to pygment highlight
