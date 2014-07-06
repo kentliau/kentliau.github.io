@@ -97,6 +97,7 @@
 .toggle-lineno:hover::before {
   color: #2ecc71;
 }
+
 /* check, mouse out */
 .toggle-lineno:checked::after {
   content: 'Line Number is Off';

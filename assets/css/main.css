@@ -25,56 +25,57 @@ html, body {
 }
 
 body {
-  font: 18px/1.618em 'Belgrano', serif;
+  font: 18px/1.618em 'Raleway', serif;
   color: #333;
-  background-color: #f6f6ee;
+  /*background-color: #f6f6ee;*/
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'IM Fell DW Pica', times, serif;
+  font-weight: 900;
+  font-family: 'Roboto', times, serif;
   line-height: 1.1618em;
   color: #3f3f3f;
 }
 
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child {
-  margin-top: .5em;
-}
-
 h1 {
   font-size: 3em;
-  margin: 1em 0 calc(1em/6*1);
+  margin: 0 0 calc(1em/6*1);
 }
 
 h2 {
   font-size: 2.5em;
-  margin: 1em 0 calc(1em/6*2);
+  margin: 0 0 calc(1em/6*2);
 }
 
 h3 {
   font-size: 2em;
-  margin: 1em 0 calc(1em/6*3);
+  margin: 0 0 calc(1em/6*3);
 }
 
 h4 {
   font-size: 1.75em;
-  margin: 1em 0 calc(1em/6*4);
+  margin: 0 0 calc(1em/6*4);
 }
 
 h5 {
   font-size: 1.50em;
-  margin: 1em 0 calc(1em/6*5);
+  margin: 0 0 calc(1em/6*5);
 }
 
 h6 {
   display: inline-block;
   font-size: 1.25em;
-  margin: 1em 0 0.2em;
+  margin: 0 0 0.2em;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #4a4a4a;
 }
 
 p {
@@ -183,23 +184,21 @@ main {
 header {
   font-family: "Ubuntu Mono", monospace;
   padding: 10px 20px;
-  background-color: rgba(190, 103, 0, 1);
-  color: rgba(222, 220, 185, 1);
 }
 
 header a, header a:visited {
   color: inherit;
+  font-family: inherit;
 }
 
 article {
-  padding: 2em 0;
+  /*padding: 2em 0;*/
 }
 
 footer {
+  margin-top: 4rem;
   font-family: "Ubuntu Mono", monospace;
   padding: 10px 20px;
-  background-color: rgba(190, 103, 0, 1);
-  color: rgba(222, 220, 185, 1);
   overflow: hidden;
 }
 
@@ -237,7 +236,7 @@ footer a, footer a:visited {
 /* Posts Listing
 /*****************************************************************************/
 .posts {
-  font-family: 'IM Fell DW Pica', times, serif;
+  font-family: 'Roboto', times, serif;
 }
 
 .posts {
@@ -245,13 +244,46 @@ footer a, footer a:visited {
 }
 
 .posts li {
-  list-style-type: none;
+  font-size: 1.1em;
+  font-weight: 300;
   line-height: 1.75em;
+  list-style-type: none;
   font-family: inherit;
+
+  position: relative;
+  margin-top: 4rem;
+  /*width: 80%;*/
+  /*max-width: 700px;*/
+  /*margin: 4rem auto;*/
+  padding-bottom: 2rem;
+  border-bottom: #ebf2f6 1px solid;
+  word-break: break-word;
+  hyphens: auto;
+
+}
+
+.posts li:first-child {
+  /*margin-top: 0;*/
+}
+
+.posts li:after {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: #e7eef2 1px solid;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  box-shadow: #fff 0 0 0 5px;
 }
 
 .posts li a {
-  font-size: 1.1em;
   font-family: inherit;
 }
 
@@ -259,6 +291,35 @@ footer a, footer a:visited {
   color: #aaa;
   font-family: 'Ubuntu Mono', monospace;
   font-size: .8em;
+}
+
+.pagination {
+position: relative;
+/*width: 80%;*/
+/*max-width: 700px;*/
+margin: 4rem auto;
+font-family: inherit;
+font-size: 1.0rem;
+color: #9EABB3;
+text-align: center;
+}
+
+.older-posts, .newer-posts {
+position: absolute;
+display: inline-block;
+padding: 0 15px;
+border: #ebf2f6 2px solid;
+text-decoration: none;
+border-radius: 30px;
+transition: border ease 0.3s;
+}
+
+.newer-posts {
+left: 0;
+}
+
+.older-posts {
+right: 0;
 }
 
 /*****************************************************************************/

@@ -2,11 +2,14 @@ name: Writing
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis",
-              "fenced_code_blocks",
-              "autolink",
-              "tables",
-              "with_toc_data"]
+               "fenced_code_blocks",
+               "autolink",
+               "tables",
+               "with_toc_data",
+               "strikethrough"]
 pygments: true
+
+# excerpt_separator: "\n\n\n"
 
 # Permalinks
 permalink: /:categories/:title/
@@ -20,8 +23,10 @@ permalink: /:categories/:title/
 #baseurl:          /
 #encoding:         UTF-8
 
-#paginate: 1
-#paginate_path: "blog/page:num"
+
+paginate_path: 'blog/page/:num'
+paginate:      5
+
 
 exclude: ["README.md"]
 

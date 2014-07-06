@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- typeface -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Belgrano|IM+Fell+DW+Pica' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:300,900|Raleway' rel='stylesheet' type='text/css'>
 
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/assets/css/syntax.css">
@@ -17,11 +17,13 @@
   </head>
   <body>
     <main role="main">
-      <header>
-        <div class="row">
-          <a href="/">Kent Liau</a>
-        </div>
-      </header>
+    <header>
+      <div class="row">
+        <h1>
+          <a href="/">blog@kent.li</a>
+        </h1>
+      </div>
+    </header>
 
       <article class="row">
         {{ content }}
@@ -30,19 +32,28 @@
       <footer class="footer">
         <div class="row">
           <address>
-              Kent Liau<br />
-              u@kent.li
+              <a href="http://kent.li/au">Kent Liau</a><br />
+              <a href="mailto:u@kent.li">u@kent.li</a>
           </address>
 
           <address>
-              <a href="https://www.behance.net/kentliau">behance.com/kentliau</a><br />
+              <a href="https://twitter.com/kentliau">@kentliau</a><br />
+              <a href="https://google.com/+kentliau">+Kent Liau</a><br />
               <a href="https://github.com/kentliau">github.com/kentliau</a><br />
-              <a href="https://plus.google.com/+kentliau">plus.google.com/+kentliau</a><br />
-              <a href="https://twitter.com/kentliau">twitter.com/kentliau</a><br />
+              <a href="https://www.behance.net/kentliau">behance.com/kentliau</a><br />
           </address>
         </div>
       </footer>
     </main>
+
+    <script>
+      (function(d, t) {
+        var e = d.createElement(t);
+        e.src = d.location.protocol + '//www.browserawarenessday.com/widget/53b90fc74ff22ef40600000c';
+        e.async = true;
+        var n = d.getElementsByTagName(t)[0]; n.parentNode.insertBefore(e, n);
+      })(document, 'script');
+    </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/assets/js/fluidbox.js"></script>

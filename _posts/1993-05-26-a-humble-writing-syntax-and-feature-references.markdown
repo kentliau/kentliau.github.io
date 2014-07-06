@@ -5,24 +5,14 @@ date: 1993-05-26 11:11:11
 category: code
 ---
 
-
-<svg width="100%" height="250" viewBox="0 0 3 2">
-  <rect width="1" height="2" x="0" fill="#008d46" />
-  <rect width="1" height="2" x="1" fill="#ffffff" />
-  <rect width="1" height="2" x="2" fill="#d2232c" />
-</svg>
-
-<ruby>
-  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
-  字 <rp>(</rp><rt>ji</rt><rp>)</rp>
-</ruby>
-
 # Humble I
 ## Humble II
 ### Humble III
 #### Humble IV
 ##### Humble V
 ###### Humble VI
+
+---
 
 ### English
 
@@ -31,6 +21,11 @@ This app does everything you could possibly want it to do and not only that, it 
 ### Chinese
 
 速未如政工在我天業實海影一經自文大理地怎解表歷何兒母業中經性需告覺？立自而情情說球果公全羅家，開最展：立經太多給人的的研。天果做道樓名童美有覺所：空黑著心強園真到品海自變，來蘭二利臺因。率良如變南於人心月接一所外點也比少怎方問光！落說回爾整、設爸的所特樂林仍得人自作？兩我不通的約：檢子生了險依治命保活在坐夫自趣兒前化請使生名北四一德團個二時：子地立河境國。
+
+<ruby>
+  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+  字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
 
 ### Japanese
 
