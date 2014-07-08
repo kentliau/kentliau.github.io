@@ -1,8 +1,8 @@
 name: Kent Liau
-author: "Kent Liau"
-url: "http://blog.kent.li"
-description: Learning Summary
-meta_description: "Write up about skill I have learned"
+author: Kent Liau
+url: http://blog.kent.li
+description: Solving problems bit by bit
+meta_description: Solving problems bit by bit
 
 markdown: redcarpet
 redcarpet:
@@ -17,6 +17,7 @@ pygments: true
 # excerpt_separator: "\n\n\n"
 
 # Permalinks
+relative_permalinks: true
 permalink: /:categories/:title/
 
 # Server

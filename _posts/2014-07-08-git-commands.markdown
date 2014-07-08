@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Git Commands
+category: Code
 ---
 
 Some really useful git commands that essential tutorial will never teach.
