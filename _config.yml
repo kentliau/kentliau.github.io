@@ -1,4 +1,9 @@
-name: Writing
+name: Kent Liau
+author: "Kent Liau"
+url: "http://blog.kent.li"
+description: Learning Summary
+meta_description: "Write up about skill I have learned"
+
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis",
@@ -23,7 +28,7 @@ permalink: /:categories/:title/
 #baseurl:          /
 #encoding:         UTF-8
 
-
+logo: false
 paginate_path: 'blog/page/:num'
 paginate:      5
 

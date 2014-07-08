@@ -1,0 +1,470 @@
+/*****************************************************************************/
+/* Common
+/*****************************************************************************/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Special case, require to be written separately for this pseudo element */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::selection */
+::-moz-selection {
+  /*background-color: rgba(255,0,128,1);*/
+  background-color: rgba(255,255,0,1);
+  /*color: white;*/
+  color: #000;
+}
+
+::selection {
+  /*background-color: rgba(255,0,128,1);*/
+  background-color: rgba(255,255,0,1);
+  /*color: white;*/
+  color: #000;
+}
+
+body {
+  font: 18px/1.618em 'Raleway', serif;
+  color: #333;
+  /*background-color: #f6f6ee;*/
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  font-family: 'Roboto', times, serif;
+  line-height: 1.1618em;
+  color: #3f3f3f;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 calc(1em/6*1);
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0 0 calc(1em/6*2);
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0 0 calc(1em/6*3);
+}
+
+h4 {
+  font-size: 1.75em;
+  margin: 0 0 calc(1em/6*4);
+}
+
+h5 {
+  font-size: 1.50em;
+  margin: 0 0 calc(1em/6*5);
+}
+
+h6 {
+  display: inline-block;
+  font-size: 1.25em;
+  margin: 0 0 0.2em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #4a4a4a;
+}
+
+p {
+  margin: 1em 0;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+a {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #00a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #a0a;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+img
+{
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(205, 202, 162, 0.16);
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  border: .7em solid transparent;
+}
+
+img[src$=".gif"] {
+  min-width: 100%;
+}
+
+cite {
+  background-color: rgba(205, 202, 162, 0.16);
+  display: block;
+  font-size: .8em;
+  color: #999;
+  border: 1em solid transparent;
+  border-top: 0;
+}
+
+cite::before {
+  content: 'Source: ';
+}
+
+address {
+  font-style: normal;
+}
+
+/* inline code */
+code {
+  background-color: #555;
+  border-radius: 3px;
+  padding: 4px 8px;
+  color: #FFE14A;
+}
+
+
+/*****************************************************************************/
+/* Common stuff
+/*****************************************************************************/
+.error {
+  color: red;
+}
+
+.warning {
+  color: rgb(200,100,0);
+}
+
+/* use attributes dir=rtl */
+/*
+.rtl {
+  direction: rtl;
+}
+*/
+
+/*****************************************************************************/
+/* Site
+/*****************************************************************************/
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  font-family: "Ubuntu Mono", monospace;
+  padding: 10px 20px;
+}
+
+header a, header a:visited {
+  color: inherit;
+  font-family: inherit;
+}
+
+article {
+  /*padding: 2em 0;*/
+}
+
+footer {
+  margin-top: 4rem;
+  font-family: "Ubuntu Mono", monospace;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+footer address {
+  color: inherit;
+  float: left;
+  margin-right: 3em;
+}
+
+footer a, footer a:visited {
+  color: inherit;
+}
+
+/*****************************************************************************/
+/* Grid
+/*****************************************************************************/
+.row {
+  width: 38em;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .row {
+    width: 25em;
+  }
+}
+
+@media (max-width: 479px) {
+  .row {
+    width: 16em;
+  }
+}
+
+/*****************************************************************************/
+/* Posts Listing
+/*****************************************************************************/
+.posts {
+  font-family: 'Roboto', times, serif;
+}
+
+.posts {
+  margin: 0;
+}
+
+.posts li {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.75em;
+  list-style-type: none;
+  font-family: inherit;
+
+  position: relative;
+  margin-top: 4rem;
+  /*width: 80%;*/
+  /*max-width: 700px;*/
+  /*margin: 4rem auto;*/
+  padding-bottom: 2rem;
+  border-bottom: #ebf2f6 1px solid;
+  word-break: break-word;
+  hyphens: auto;
+
+}
+
+.posts li:first-child {
+  /*margin-top: 0;*/
+}
+
+.posts li:after {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: #e7eef2 1px solid;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  box-shadow: #fff 0 0 0 5px;
+}
+
+.posts li a {
+  font-family: inherit;
+}
+
+.posts span, .meta {
+  color: #aaa;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: .8em;
+}
+
+.pagination {
+position: relative;
+/*width: 80%;*/
+/*max-width: 700px;*/
+margin: 4rem auto;
+font-family: inherit;
+font-size: 1.0rem;
+color: #9EABB3;
+text-align: center;
+}
+
+.older-posts, .newer-posts {
+position: absolute;
+display: inline-block;
+padding: 0 15px;
+border: #ebf2f6 2px solid;
+text-decoration: none;
+border-radius: 30px;
+transition: border ease 0.3s;
+}
+
+.newer-posts {
+left: 0;
+}
+
+.older-posts {
+right: 0;
+}
+
+/*****************************************************************************/
+/* Post
+/*****************************************************************************/
+.post {
+  border-top: 4px solid #eee;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+blockquote {
+  margin: 0;
+  padding: .1em 0 .1em 1em;
+  color: #666;
+  border-left: .4em solid rgba(205, 202, 162, .5);
+  background: rgba(205, 202, 162, 0.16);
+}
+
+
+blockquote cite {
+  display: block;
+  font-size: .8em;
+  color: #999;
+  background: none;
+  border: 0;
+}
+
+blockquote cite::before {
+  content: '\2014 \00A0';
+}
+
+kbd {
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0.15em 0.4em 0.1em;
+
+  color: #333;
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 1.2em;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 0px rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border: 3px solid #ddd;
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+table > tbody > tr:first-child > td {
+  border-top: 0;
+}
+
+table > thead:first-child > tr:first-child > th:first-child,
+table > tbody > tr > td:first-child {
+  border-left: 0;
+}
+
+table > thead:first-child > tr:first-child > th:last-child,
+table > tbody > tr > td:last-child {
+  border-right: 0;
+}
+
+
+/*****************************************************************************/
+/* Fluid box
+/*****************************************************************************/
+.fluidbox {
+  outline: none;
+}
+
+.fluidbox-overlay {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all .25s ease-in-out;
+}
+
+.fluidbox-wrap {
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  transition: all .25s ease-in-out;
+}
+
+.fluidbox-ghost {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  transition: all .25s ease-in-out;
+}
+
+.fluidbox-closed .fluidbox-ghost {
+  -webkit-transition-property: top, left, opacity, -webkit-transform;
+  -moz-transition-property: top, left, opacity, -moz-transform;
+  -o-transition-propert: top, left, opacity, -o-transform;
+  transition-property: top, left, opacity, transform;
+  transition-delay: 0, 0, .25s, 0;
+}
