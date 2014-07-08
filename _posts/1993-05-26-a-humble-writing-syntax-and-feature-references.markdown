@@ -224,6 +224,7 @@ curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' 
   </div>
 </body>
 </html>
+
 {% endhighlight %}
 
 {% highlight css linenos %}
@@ -234,6 +235,7 @@ body {
 
 {% highlight javascript %}
 // without line numbers
+
 (function(){
   console.log();
 })();

@@ -50,6 +50,7 @@ Keys                 | Description
 <kbd>⌘</kbd><kbd>Y</kbd> | Redo or repeat
 <kbd>⌃</kbd><kbd>␣</kbd> | Autocomplete (repeat to select next suggestion)
 <kbd>⌃</kbd><kbd>M</kbd> | Jump to matching brackets
+<kbd>⌘</kbd><kbd>K</kbd><kbd>D</kbd> | Insert date, anywhere
 
 
 #### Markup language
