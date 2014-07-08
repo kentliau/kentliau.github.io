@@ -16,7 +16,7 @@ layout: nil
     <item>
       <title>{{ post.title }}</title>
       <link>{{ post.url }}</link>
-      <description>{{ post.excerpt }}</description>
+      <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <dc:date>{{ post.date | date_to_xmlschema}}</dc:date>
     </item>
