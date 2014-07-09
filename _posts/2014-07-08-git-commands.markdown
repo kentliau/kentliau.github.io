@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Git Commands
-date: 2014-07-09 11:23:07
-category: computer
-tags: [git]
+date: 2014-07-08
+category: code
+tags: [git, cli]
 ---
 
 Some really useful git commands that essential tutorial will never teach.

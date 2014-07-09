@@ -2,10 +2,11 @@
 layout: post
 title: "Sublime Text Keyboard Shortcut"
 date: 2014-07-06
-category: computer
+category: code
+tags: [sublime text, os x, unix]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis error, quibusdam maiores expedita dolores ab cum, doloremque delectus reprehenderit dignissimos sit eligendi similique, quia dolorem tempora quam aliquid illo possimus.
+Using a new software is easy, mastering it by knowing its shortcut key. If you move from Windows OS to UNIX OS, I think you will love the way UNIX provide you with a very handy shortcut key to let you work productive.
 
 #### OS X/UNIX
 Keys                 | Description
@@ -50,7 +51,13 @@ Keys                 | Description
 <kbd>⌘</kbd><kbd>Y</kbd> | Redo or repeat
 <kbd>⌃</kbd><kbd>␣</kbd> | Autocomplete (repeat to select next suggestion)
 <kbd>⌃</kbd><kbd>M</kbd> | Jump to matching brackets
+
+
+#### Sublime Jekyll Package
+Keys                 | Description
+---------------------|---------------------------------------------------------------------
 <kbd>⌘</kbd><kbd>K</kbd><kbd>D</kbd> | Insert date, anywhere
+<kbd>⌘</kbd><kbd>K</kbd><kbd>T</kbd> | Insert datetime, anywhere
 
 
 #### Markup language
@@ -91,4 +98,3 @@ Keys                 | Description
 <kbd>F2</kbd> | Next bookmark (Overwritten by OS X, and Windows)
 <kbd>⇧</kbd><kbd>F2</kbd> | Previous bookmark
 <kbd>⌘</kbd><kbd>⇧</kbd><kbd>F2</kbd> | Clear bookmarks
-

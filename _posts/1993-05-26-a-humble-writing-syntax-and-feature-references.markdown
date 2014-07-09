@@ -3,9 +3,10 @@ layout: post
 title: "A Humble Writing Syntax and Feature References"
 date: 1993-05-26 11:11:11
 category: code
+tags: [style guide, references]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum illo doloremque, cupiditate. Nulla natus eligendi nisi ipsum in reiciendis cum, voluptates iste distinctio sit consectetur suscipit ut, praesentium, eveniet repellat!
+Having a good habit of standardize everything.
 
 # Humble I
 ## Humble II

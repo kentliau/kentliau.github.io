@@ -30,7 +30,7 @@ permalink: /:categories/:title/
 #encoding:         UTF-8
 
 logo: false
-paginate_path: 'blog/page/:num'
+paginate_path: '/page/:num'
 paginate:      5
 
 

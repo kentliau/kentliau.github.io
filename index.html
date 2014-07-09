@@ -2,6 +2,8 @@
 layout: default
 cover: false
 about: 'about.html'
+logo: 'http://s.gravatar.com/avatar/7f81dea033d1a228c16807571213554b?s=200'
+cover: 'https://pbs.twimg.com/profile_banners/94328538/1404801030/1500x500'
 ---
 
 <header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
@@ -27,7 +29,7 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <div class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> <span class="pull-right">{{ post.tags | array_to_sentence_string}}</span></div>
+            <div class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time><span> on {{ post.category }}</span><span title="Tags" class="pull-right">{{ post.tags | array_to_sentence_string }}</span></div>
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
         </header>
@@ -44,14 +46,14 @@ about: 'about.html'
           {% if paginator.previous_page == 1 %}
           <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
           {% else %}
-          <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
+          <a class="newer-posts" href="/page/{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
           {% endif %}
         {% endif %}
 
         <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
 
         {% if paginator.next_page %}
-        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
+        <a class="older-posts" href="/page/{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
         {% endif %}
     </nav>
 
