@@ -2,7 +2,7 @@
 layout: post
 title: "Sublime Text Keyboard Shortcut"
 date: 2014-07-06
-category: code
+category: computer
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis error, quibusdam maiores expedita dolores ab cum, doloremque delectus reprehenderit dignissimos sit eligendi similique, quia dolorem tempora quam aliquid illo possimus.
