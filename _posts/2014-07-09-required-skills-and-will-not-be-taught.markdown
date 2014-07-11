@@ -4,8 +4,10 @@ title: Required Skills And Will Not Be Taught
 date: 2014-07-09
 category: code
 tags: []
+youtube_id: wiyYozeOoKs
 ---
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolore quia tempore modi repellendus minus animi, eaque omnis eum illo aliquam necessitatibus corporis repudiandae placeat consectetur voluptate earum assumenda adipisci.
 
 > College, University, Enterprise, Industry.
 
@@ -15,6 +17,8 @@ In fact, you are paying to learn how to learn by yourself.
 You are paying to meet new friends from everywhere.
 You are paying to meet industry people.
 You are paying to interact with professor, lecturer.
+
+
 
 ##### Human
 Why human exists?
@@ -101,7 +105,3 @@ Why use other people API, because your users are most like already registered wi
 - API
 - RESTful
 - OAuth (How to use not how to build)
-
-
-
-<div></div>

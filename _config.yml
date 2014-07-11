@@ -14,7 +14,7 @@ redcarpet:
                "strikethrough"]
 pygments: true
 
-# excerpt_separator: "\n\n\n"
+#excerpt_separator: <!-- more -->
 
 # Permalinks
 relative_permalinks: true

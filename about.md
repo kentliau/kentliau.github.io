@@ -1,8 +1,23 @@
 ---
 layout: page
-title: About me
+X_title:
 ---
 
-I contribute to open source projects.
+Timeline
+========
 
-I
+
+Works
+=====
+
+
+Resumé
+======
+
+
+Portfolio
+=========
+
+
+Education
+=========

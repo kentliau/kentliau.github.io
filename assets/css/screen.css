@@ -396,12 +396,12 @@ margin on the iframe, cause it breaks stuff. */
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
     display: block;
-    max-height: 100px;
+    max-height: 120px;
     width: auto;
     margin: 0 auto;
     line-height: 0;
     border-radius: 50%;
-    box-shadow: 0 0 0 2px white, 0 0 0 5px beige;
+    /*box-shadow: 0 0 0 2px white, 0 0 0 5px beige;*/
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -591,16 +591,19 @@ margin on the iframe, cause it breaks stuff. */
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-    position: absolute;
+    /*position: absolute;*/
     top: 4rem;
     right: 0;
     width: 140px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1.4rem 1.6rem 1.6rem 0;
+    /*margin: 1.4rem 1.6rem 1.6rem 0;*/
+    margin: 1.4rem 1.6rem 0 0;
     color: #BBC7CC;
     text-decoration: none;
 }

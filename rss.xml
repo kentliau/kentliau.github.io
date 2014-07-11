@@ -13,13 +13,13 @@ layout: nil
     <description>{{ site.description }}</description>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     {% for post in site.posts %}
-    <item>
-      <title>{{ post.title }}</title>
-      <link>{{ post.url }}</link>
-      <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
-      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <dc:date>{{ post.date | date_to_xmlschema}}</dc:date>
-    </item>
+      <item>
+        <title>{{ post.title }}</title>
+        <link>{{ post.url }}</link>
+        <description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <dc:date>{{ post.date | date_to_xmlschema}}</dc:date>
+      </item>
     {% endfor %}
     <dc:date>{{ site.time | date_to_xmlschema }}</dc:date>
   </channel>
