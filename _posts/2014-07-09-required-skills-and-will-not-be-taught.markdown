@@ -18,7 +18,7 @@ You are paying to meet new friends from everywhere.
 You are paying to meet industry people.
 You are paying to interact with professor, lecturer.
 
-
+No TDD, SCM, Best-Practice, Guidelines
 
 ##### Human
 Why human exists?
@@ -41,7 +41,8 @@ For computer operating system, you must able to quickly get you hands-on on UNIX
 Know how to translate human work in to digital work
 
 ##### Modern Time
-- Markdown: for any documentation, note. No more *.pages or *.docx, that is for computer dummies.
+- Documentation: Markdown
+- Presentation: reveal.js, google io slide template
 
 ##### Learn the fundamental
 
@@ -70,7 +71,6 @@ Know how to translate human work in to digital work
 - Ruby on Rails
 
 ##### Knowing how to intergrate and interop
-
 Why use other people API, because your users are most like already registered with those services and love that services. You now use these services public API to build a custom(better) user experiences for the same user using those services.
 
 - Facebook API
@@ -81,11 +81,14 @@ Why use other people API, because your users are most like already registered wi
 - Dropbox API
 
 ##### Know some PaaS
-
 - Parse
 - Firebase
 - AppFog
 - Heroku
+
+##### Platform
+- Facebook platform: Build games or apps on top of the 1 billion users platform.
+- Chrome Platform
 
 
 ##### Build something
@@ -94,7 +97,7 @@ Why use other people API, because your users are most like already registered wi
 - Build tools that help you and other
 
 ##### Expert in a Area
-- Web Platform:
+- Web Platform
 - Design
 - UX/UI
 - Video Editing

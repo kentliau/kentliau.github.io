@@ -6,6 +6,19 @@ category: code
 tags: [git, cli]
 ---
 
+
+Few years ago, source control is never heard off.
+
+Coding standards are optional
+
+In more commercial environments, many things are often missing:
+
+There are no proper specs
+
+Things are released or delivered "when they are ready"
+
+This is not a sustainable environment
+
 Some really useful git commands that essential tutorial will never teach.
 
 Undoing a wrong commit
