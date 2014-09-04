@@ -1,0 +1,13 @@
+---
+layout: post
+title: Don't Nest
+date: 2014-07-18 20:49:49
+category: life
+tags: []
+---
+
+Don't nest your work. If will make you fall in a finite but very very huge loops within a loops within a loops.
+
+We are human. Not machines. We create machines to solve our problems. Especially problems within a problems within a problems.
+
+We need a method like recursive that will eventually return to where we was felt into the loops.

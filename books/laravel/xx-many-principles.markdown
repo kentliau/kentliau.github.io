@@ -22,6 +22,7 @@ You knew that in real world, we never only use one kind of computer language to 
 
 Let take a website as example, we have HTML, JS, CSS or more. Make sure you only let them do only the thing they need to be. Never mixed one thing to another for the reason of "faster" deliver to your client or lecture.
 
+#### SOLID
 
 #### CI: Continuous Integration
 
@@ -31,6 +32,7 @@ Let take a website as example, we have HTML, JS, CSS or more. Make sure you only
 
 #### Maintainabilty
 
+#### KISS
 
 #### Modularity
 

@@ -71,6 +71,7 @@ Keys                 | Description
 Keys                 | Description
 ---------------------|---------------------------------------------------------------------
 <kbd>⌃</kbd><kbd>W</kbd> | Wrap with a tag
+<kbd>⌃</kbd><kbd>E</kbd> | Expand anything
 
 
 #### Find/Replace

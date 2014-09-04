@@ -6,6 +6,10 @@ category: code
 tags: [git, cli]
 ---
 
+- Rolling back. Imagine you can't rolling after you have deploy a buggy version. Think of Forza Horizon
+  - It just like Windows Restore, but much more powerful, you have the full control
+  - Doing a deploy without rolling back capabilities is like ..!2@#!@#3@#%&*#{}:>... fuck up your life.
+
 Some really useful git commands that essential tutorial will never teach.
 
 Undoing a wrong commit

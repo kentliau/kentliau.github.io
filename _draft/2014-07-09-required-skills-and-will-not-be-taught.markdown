@@ -7,7 +7,14 @@ tags: []
 youtube_id: wiyYozeOoKs
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolore quia tempore modi repellendus minus animi, eaque omnis eum illo aliquam necessitatibus corporis repudiandae placeat consectetur voluptate earum assumenda adipisci.
+
+Education is zooming in into a knowledges by learning something from top level(more practical) to the bottom(fundamental), then get back to top(build better pactical thing with fundamental).
+
+Don't Let Technology Limit Your Idea, Ideas are Unlimited, Technology will get created.
+
+Don't limit yourself within your skillset, it is highly expandables, learn it when you need it. Go crazy with your awesome ideas.
+
+
 
 > College, University, Enterprise, Industry.
 

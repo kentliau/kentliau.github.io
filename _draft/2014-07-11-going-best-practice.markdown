@@ -7,6 +7,8 @@ tags: []
 youtube_id:
 ---
 
+"To live as a monster or to die as a good man." - Shutter Island.
+
 Why we need best practice
 
 
