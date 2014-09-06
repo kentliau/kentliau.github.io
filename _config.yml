@@ -1,8 +1,8 @@
 name: Kent Liau
 author: Kent Liau
 url: http://blog.kent.li
-description: Solving problems bit by bit
-meta_description: Solving problems bit by bit
+description: Trying to tell story.
+meta_description:
 
 markdown: redcarpet
 redcarpet:
@@ -12,7 +12,7 @@ redcarpet:
                "tables",
                "with_toc_data",
                "strikethrough"]
-pygments: true
+highlighter: pygments
 
 #excerpt_separator: <!-- more -->
 

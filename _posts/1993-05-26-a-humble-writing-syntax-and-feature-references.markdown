@@ -202,13 +202,13 @@ Left         | Center        | Right
 
 ### Code and Syntax Highlight
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # This command grab the latest doodles from google doodle
 # and copy the image link to your clipboard
 curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' | grep 'img src' | sed s/.*'<img src="\/\/'/''/ | sed s/'" alt=".*'/''/ | pbcopy
 {% endhighlight %}
 
-{% highlight html linenos %}
+{% highlight html %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -228,7 +228,7 @@ curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' 
 
 {% endhighlight %}
 
-{% highlight css linenos %}
+{% highlight css %}
 body {
   background: rgb(255,255,255);
 }
@@ -236,7 +236,6 @@ body {
 
 {% highlight javascript %}
 // without line numbers
-
 (function(){
   console.log();
 })();

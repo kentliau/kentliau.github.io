@@ -41,3 +41,10 @@ img.profile {
 	border-radius: 50px;
 }
 
+.tag {
+	font-size: .8em;
+	color: white;
+	background-color: #50585D;
+	border-radius: 20px;
+	padding: 2px 8px;
+}
