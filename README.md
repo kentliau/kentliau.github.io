@@ -1,7 +1,10 @@
+My blogs
+========
 [kentliau.github.io](http://kentliau.github.io)
 
-Power Up By
-===========
-1. [Jekyll](http://jekyllrb.com)
-2. [Kasper](https://github.com/rosario/kasper) - Modified
-3. [Fluidbox](https://github.com/terrymun/Fluidbox)
+Credits
+=======
+1. [Github Pages](https://pages.github.com/)
+- [Jekyll](http://jekyllrb.com)
+- [Kasper](https://github.com/rosario/kasper) (Modified)
+- [Fluidbox](https://github.com/terrymun/Fluidbox)
