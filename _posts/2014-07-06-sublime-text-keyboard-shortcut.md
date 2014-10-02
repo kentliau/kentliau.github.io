@@ -9,6 +9,13 @@ youtube_id: SzlpTRNIAvc
 
 Using a new software is easy, mastering it by knowing its shortcut key. If you move from Windows OS to UNIX OS, I think you will love the way UNIX provide you with a very handy shortcut key to let you work productive.
 
+#### Terminal
+Keys                 | Description
+---------------------|---------------------------------------------------------------------
+<kbd>⌃</kbd> <kbd>U</kbd> | Delete from cursor to start of the line
+<kbd>⌃</kbd> <kbd>K</kbd> | Delete from cursor to end of the line
+<kbd>⌃</kbd> <kbd>W</kbd> | Delete from cursor to start of the word
+
 #### OS X/UNIX
 Keys                 | Description
 ---------------------|---------------------------------------------------------------------
