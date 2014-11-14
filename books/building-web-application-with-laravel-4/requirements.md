@@ -13,6 +13,7 @@ $ composer create-project laravel/laravel MyApplicationName
 ```
 
 #### GIT
+http://www.sitepoint.com/work-peoples-code/
 
 #### Programming Skills
 Expected you to know basic array, because in PHP we are basically have two kind of array, numerical indexed array and associative array.
