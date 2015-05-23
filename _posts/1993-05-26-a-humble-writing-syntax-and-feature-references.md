@@ -146,6 +146,7 @@ Keys | Description
 Keys/Command | Description
 -------------|------------
 `!!` | refer previous command
+`$_` | refer previous file, previously created or previously used
 <kbd>Tab</kbd> | type something or nothing then autocomplete anything
 <kbd>⌃</kbd><kbd>C</kbd> | terminate current process
 <kbd>⌃</kbd><kbd>D</kbd> | logout
