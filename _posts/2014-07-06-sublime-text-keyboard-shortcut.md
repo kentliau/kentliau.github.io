@@ -107,3 +107,8 @@ Keys                 | Description
 <kbd>F2</kbd> | Next bookmark (Overwritten by OS X, and Windows)
 <kbd>⇧</kbd><kbd>F2</kbd> | Previous bookmark
 <kbd>⌘</kbd><kbd>⇧</kbd><kbd>F2</kbd> | Clear bookmarks
+
+#### Google Chrome
+Keys                 | Description
+---------------------|---------------------------------------------------------------------
+<kbd>⌘</kbd><kbd>⇧</kbd><kbd>C</kbd> | Open Inspector and highlight element
