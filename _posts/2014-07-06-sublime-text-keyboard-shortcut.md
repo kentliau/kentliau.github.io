@@ -9,6 +9,11 @@ youtube_id: SzlpTRNIAvc
 
 Improve your workflow by mastering the key binding of your application.
 
+Please do not expecting a full list of the key binding, you can always refer back to your configuration files. Here is my list of key binding that I use it daily.
+
+*Some key are not shown on your menu.
+
+
 #### OS X/UNIX
 Keys                 | Description
 ---------------------|---------------------------------------------------------------------
