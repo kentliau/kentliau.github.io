@@ -9,9 +9,11 @@ youtube_id: SzlpTRNIAvc
 
 Improve your workflow by mastering the key binding of your application.
 
-Please do not expecting a full list of the key binding, you can always refer back to your configuration files. Here is my list of key binding that I use it daily.
+This isn't a full list of the key binding, you can always refer back to your configuration files.
 
-*Some key are not shown on your menu.
+You might find it useful if you want to migrate to a full keyboard user.
+
+There are some key binding are not shown on your menu. E.g. Move focus to sidebar.
 
 
 #### OS X/UNIX
