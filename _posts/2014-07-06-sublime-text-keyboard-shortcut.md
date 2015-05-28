@@ -11,7 +11,7 @@ Improve your workflow by mastering the key binding of your application.
 
 This isn't a full list of the key binding, you can always refer back to your configuration files.
 
-You might find it useful if you want to migrate to a full keyboard user.
+You might find it useful if you want to migrate to become a full keyboard user.
 
 There are some key binding are not shown on your menu. E.g. Move focus to sidebar.
 
