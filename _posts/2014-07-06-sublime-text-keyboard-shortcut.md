@@ -7,14 +7,7 @@ tags: [sublime text, os x, unix]
 youtube_id: SzlpTRNIAvc
 ---
 
-Using a new software is easy, mastering it by knowing its shortcut key. If you move from Windows OS to UNIX OS, I think you will love the way UNIX provide you with a very handy shortcut key to let you work productive.
-
-#### Terminal
-Keys                 | Description
----------------------|---------------------------------------------------------------------
-<kbd>⌃</kbd> <kbd>U</kbd> | Delete from cursor to start of the line
-<kbd>⌃</kbd> <kbd>K</kbd> | Delete from cursor to end of the line
-<kbd>⌃</kbd> <kbd>W</kbd> | Delete from cursor to start of the word
+Improve your workflow by mastering the key binding of your application.
 
 #### OS X/UNIX
 Keys                 | Description
@@ -107,6 +100,15 @@ Keys                 | Description
 <kbd>F2</kbd> | Next bookmark (Overwritten by OS X, and Windows)
 <kbd>⇧</kbd><kbd>F2</kbd> | Previous bookmark
 <kbd>⌘</kbd><kbd>⇧</kbd><kbd>F2</kbd> | Clear bookmarks
+
+## Other Apps
+
+#### Terminal
+Keys                 | Description
+---------------------|---------------------------------------------------------------------
+<kbd>⌃</kbd> <kbd>U</kbd> | Delete from cursor to start of the line
+<kbd>⌃</kbd> <kbd>K</kbd> | Delete from cursor to end of the line
+<kbd>⌃</kbd> <kbd>W</kbd> | Delete from cursor to start of the word
 
 #### Google Chrome
 Keys                 | Description
