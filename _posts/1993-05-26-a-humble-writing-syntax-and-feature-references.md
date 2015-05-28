@@ -163,11 +163,17 @@ Keys/Command | Description
 
 [http://legendarise.com](http://legendarise.com)
 
+[http://kentliau.com](http://kentliau.com)
+
+[http://pmam.club](http://pmam.club)
+
+<!--
 [http://magdoll.net](http://magdoll.net)
 
 [http://bioenergy2u.com](http://bioenergy2u.com)
 
 [http://mistermoonlight.com](http://mistermoonlight.com)
+-->
 
 
 ### Table
