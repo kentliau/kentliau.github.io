@@ -4,7 +4,7 @@ url: http://blog.kent.li
 description: "About Workflow"
 meta_description:
 
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis",
                "fenced_code_blocks",
