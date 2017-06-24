@@ -12,7 +12,7 @@ redcarpet:
                "tables",
                "with_toc_data",
                "strikethrough"]
-highlighter: pygments
+highlighter: rouge
 
 #excerpt_separator: <!-- more -->
 
